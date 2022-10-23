@@ -116,12 +116,7 @@ sliderOptionsEl.forEach(item =>{
     item.addEventListener('click', (e)=> {
         activeOption.classList.remove("active");
         let activeOptionPrev = activeOption;
-        if(e.path[1] === document.querySelector("div.slider__options")){
-            activeOption = e.path[0];
-        }
-        else{
-            activeOption = e.path[1];
-        }
+        activeOption = item;
         
         activeOption.classList.add("active");
 
@@ -148,12 +143,7 @@ document.querySelectorAll(".slider2__option").forEach (i =>{
     i.addEventListener('click', (e)=> {
         activeOption2.classList.remove("active");
         let activeOptionPrev = activeOption2;
-        if(e.path[1] === document.querySelector("div.slider2__options")){
-            activeOption2 = e.path[0];
-        }
-        else{
-            activeOption2 = e.path[1];
-        }
+        activeOption2 = i;
         
         activeOption2.classList.add("active");
 
